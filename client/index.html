@@ -106,9 +106,9 @@
                             <div class="form-group">
                                 <label for="context">Context: </label>
                                 <span id="contextHelpBlock" class="help-block">You can use GitHub flavored markdown.</span>
-                                <textarea type="text" class="form-control" rows="3" placeholder="context" id="context" ng-model="wordsCtrl.newWord.context"></textarea>
+                                <textarea type="text" class="form-control" rows="70" placeholder="context" id="context" ng-model="wordsCtrl.newWord.context"></textarea>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="source">Source: </label>
                                 <span id="contextHelpBlock" class="help-block">You can use GitHub flavored markdown.</span>
                                 <textarea type="text" class="form-control" rows="2" placeholder="source" id="source" ng-model="wordsCtrl.newWord.source"></textarea>
@@ -133,16 +133,14 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- /btn-group -->
                                     <input type="text" class="form-control" ng-model="example.value">
                                     <span class="input-group-btn">
                             <button class="btn btn-default" type="button" ng-click="wordsCtrl.newWord.examples.splice($index, 1)">Remove this example</button>
                         </span>
                                 </div>
                                 <button class="btn btn-default" type="button" ng-click="wordsCtrl.addNewExample(wordsCtrl.newWord)">Add an example</button>
-                                <!-- /input-group -->
                                 <span id="helpBlock" class="help-block">To save disk space, the image and video resources are all links. The images can store in Google Drive, and videos can store in Youtube. Currently the video format should be a embeded one like http://www.youtube.com/embed/ky4CdN0x58A</span>
-                            </div>
+                            </div> -->
                         </form>
                         <div class="alert alert-success" role="alert" ng-show="wordsCtrl.saveFlag === 1">
                             <strong>Well done!</strong> You successfully save the word.
