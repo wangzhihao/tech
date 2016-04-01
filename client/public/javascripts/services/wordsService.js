@@ -16,7 +16,7 @@
     };
 
     var httpService = Restangular.withConfig(function(RestangularConfigurer) {
-      RestangularConfigurer.setBaseUrl('api');
+      RestangularConfigurer.setBaseUrl('http://youaccomplish.com/technique/api');
     });
 
     return service;
