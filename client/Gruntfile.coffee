@@ -67,6 +67,7 @@ module.exports = (grunt) ->
           {
             src:[
               './public/javascripts/app.js'
+              './public/javascripts/analytics.js'
               './public/javascripts/services/wordsService.js'
               './public/javascripts/controllers/wordsCtrl.js'
               './public/javascripts/directives/addTooltipDirective.js'
