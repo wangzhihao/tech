@@ -6,7 +6,7 @@
                 <span class="label label-default">Context</span>
             </p>
             <div highlight-new-word>
-                <div marked="(word.formattedContext || '').replace(wordsCtrl.LINE_HEAD, '$1>');"></div>
+                <div marked="word.formattedContext || ''"></div>
             </div>
             <div class="source" ng-if="word.source && word.source.trim() !== '' " marked=" '--From ' + word.source"></div>
             <div ng-include="operationsPartial"></div>
