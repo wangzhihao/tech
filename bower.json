@@ -1,0 +1,39 @@
+{
+  "name": "opentown-web",
+  "description": "the web client for opentown",
+  "main": "",
+  "authors": [
+    "zhihao wang <hao@opentown.cn>"
+  ],
+  "license": "no",
+  "keywords": [
+    "opentown",
+    "web",
+    "IM"
+  ],
+  "moduleType": [],
+  "homepage": "http://opentown.cn/web",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bcrypt": "https://github.com/nevins-b/javascript-bcrypt.git",
+    "Cycle": "cycle-js#^0.0.1",
+    "angular-bootstrap-switch": "^0.5.0",
+    "angular-cookies": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "bootstrap-switch": "^3.3.2",
+    "font-awesome": "fontawesome#^4.5.0",
+    "ng-file-upload": "^12.0.4",
+    "restangular": "^1.5.2",
+    "underscore": "^1.8.3",
+    "bootstrap-suggest": "https://github.com/lodev09/bootstrap-suggest.git",
+    "angular-raven": "^0.6.2"
+  }
+}
