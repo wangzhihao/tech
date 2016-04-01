@@ -1,7 +1,7 @@
 (function(angular) {
   angular.module('wordsApp').directive('wordTag', function($timeout) {
     return {
-      templateUrl : 'js/words/partials/wordTag.html.tpl',
+      templateUrl : 'partials/wordTag.html.tpl',
       restrict: 'AE',
       //wordsCtrl should support editWord() and removeWord()
       scope: { 
@@ -9,7 +9,7 @@
         wordsCtrl : '=ctrlEntry'
        },
       link: function($scope, iElm, iAttrs, controller) {
-        $scope.operationsPartial = 'js/words/partials/wordTagOperations.html.tpl';
+        $scope.operationsPartial = 'partials/wordTagOperations.html.tpl';
         $scope.toggleFlip = toggleFlip;
 
         var front = iElm.find('.front'),

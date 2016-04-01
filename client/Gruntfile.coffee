@@ -31,8 +31,7 @@ module.exports = (grunt) ->
             expand: true
             cwd: './public'
             src: [
-              'images/**/*.*'
-              '**/*.html'
+              '**/*.*'
             ]
             dest: './build'
           }
@@ -67,24 +66,21 @@ module.exports = (grunt) ->
         files:[
           {
             src:[
-              './public/javascripts/modified-third-parties/jquery.shiftenter.js'
-              './public/javascripts/script.js'
               './public/javascripts/app.js'
-              './public/javascripts/service.js'
-              './public/javascripts/utils.js'
-              './public/javascripts/data-dao.js'
-              './public/javascripts/poll.js'
-              './public/javascripts/controller.js'
-              './public/javascripts/chat-controller.js'
-              './public/javascripts/directive.js'
-              './public/javascripts/track.js'
+              './public/javascripts/services/wordsService.js'
+              './public/javascripts/controllers/wordsCtrl.js'
+              './public/javascripts/directives/addTooltipDirective.js'
+              './public/javascripts/directives/wordsDialogLocalizationDirective.js'
+              './public/javascripts/directives/wordTagDirective.js'
+              './public/javascripts/directives/highlightNewWordDirective.js'
+              './public/javascripts/services/wordSelectionService.js'
+              './public/javascripts/services/wordsLocalService.js'
             ]
             dest:'./build/javascripts/main.js'
           }
           {
             src:[
               './build/stylesheets/style.css'
-              './public/stylesheets/jquery.shiftenter.css'
             ]
             dest:'./build/stylesheets/main.css'
           }
@@ -100,16 +96,8 @@ module.exports = (grunt) ->
             'dist/css/bootstrap.css'
             'dist/js/bootstrap.js'
           ]
-          'bootstrap-suggest': [
-            'js/bootstrap-suggest.js'
-            'css/bootstrap-suggest.css'
-          ]
           'font-awesome': [
             'css/font-awesome.css'
-          ]
-          'bcrypt': [
-            './isaac.js'
-            './bCrypt.js'
           ]
         dependencies:
           'angular': 'jquery'
@@ -147,10 +135,7 @@ module.exports = (grunt) ->
         livereload: true
       build:
         files: [
-          './public/**/*.html'
-          './public/**/*.css'
-          './public/**/*.scss'
-          './public/**/*.js'
+          './public/**/*.*'
           './Gruntfile.coffee'
           './bower.json'
           './package.json'
